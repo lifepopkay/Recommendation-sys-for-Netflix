@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommender System</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+
+
+    <h2>Movies you can also watch</h2>
+    <form action="{{ url_for('recommend_movies')}}" method="post">
+      <input
+        type="text"
+        name="the_title"
+        placeholder="Movie you just watched"
+        required
+      />
+      <br />
+      <button type="submit" class="btn">Get your next Movie</button>
+    </form>
+
+    <p>Showing result for: {{ search_name }}</p>
+
+     <table>
+            <tr></tr>
+                <th>Movie Title</th>
+                <th>Movie Genre</th>
+                <th>Production Countries</th>
+                <th>Movie Type</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_name[0] }}</td>
+                    <td>{{ movie_genre[0] }}</td>
+                    <td>{{ movie_county[0] }}</td>
+                    <td>{{ movie_type[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[1] }}</td>
+                    <td>{{ movie_genre[1] }}</td>
+                    <td>{{ movie_county[1] }}</td>
+                    <td>{{ movie_type[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[2] }}</td>
+                    <td>{{ movie_genre[2] }}</td>
+                    <td>{{ movie_county[2] }}</td>
+                    <td>{{ movie_type[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[3] }}</td>
+                    <td>{{ movie_genre[3] }}</td>
+                    <td>{{ movie_county[3] }}</td>
+                    <td>{{ movie_type[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[4] }}</td>
+                    <td>{{ movie_genre[4] }}</td>
+                    <td>{{ movie_county[4] }}</td>
+                    <td>{{ movie_type[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[5] }}</td>
+                    <td>{{ movie_genre[5] }}</td>
+                    <td>{{ movie_county[5] }}</td>
+                    <td>{{ movie_type[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[6] }}</td>
+                    <td>{{ movie_genre[6] }}</td>
+                    <td>{{ movie_county[6] }}</td>
+                    <td>{{ movie_type[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[7] }}</td>
+                   <td>{{ movie_genre[7] }}</td>
+                    <td>{{ movie_county[7] }}</td>
+                    <td>{{ movie_type[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[8] }}</td>
+                    <td>{{ movie_genre[8] }}</td>
+                    <td>{{ movie_county[8] }}</td>
+                    <td>{{ movie_type[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_name[9] }}</td>
+                   <td>{{ movie_genre[9] }}</td>
+                    <td>{{ movie_county[9] }}</td>
+                    <td>{{ movie_type[9] }}</td>
+                </tr>
+                <tr>
+                  <td>{{ movie_name[10] }}</td>
+                   <td>{{ movie_genre[10] }}</td>
+                    <td>{{ movie_county[10] }}</td>
+                    <td>{{ movie_type[10] }}</td>
+                </tr>
+            </tbody>
+        </table> 
+
+        
+  </body>
+
+  <footer style="font-size:xx-large;">By Popoola Kayode</footer>
+</html>
