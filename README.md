@@ -16,5 +16,12 @@ The basic assumption behind the algorithm is that users with similar interests h
 In a content-based recommendation system, first, we need to create a profile for each item, which represents the properties of those items.
 From the user profiles are inferred for a particular user. We use these user profiles to recommend the items to the users from the catalog.
 
-In this project, I used the content based recommendation system
+In this project, I used the content based recommendation system.
+
+In my respository, i have the model file, which includes the jupyter notebook for the data analysis,data cleaning and visualization. and the cleaned data named 'work_data".
+I also have the dataset- file containing the data used.
+I have the python file for deployment
+
+
+Thanks for reading through and I'm opened to correction
 
