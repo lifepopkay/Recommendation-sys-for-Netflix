@@ -1,4 +1,5 @@
-flask
 sklearn
 pandas
 numpy
+streamlit
+omdbapi
